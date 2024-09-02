@@ -206,7 +206,9 @@ class App extends React.Component {
             </div>
           </div>
         </Draggable>
-
+        <Draggable delay={500} {...dragHandlers}>
+          <div className="box">I can be dragged after 500ms</div>
+        </Draggable>
       </div>
     );
   }

@@ -289,6 +289,10 @@ positionOffset: {x: number | string, y: number | string},
 // you to, for example, get the correct drag deltas while you are zoomed in or out via
 // a transform or matrix in the parent of this element.
 scale: number
+
+// when you press mouse you can drag the box after delay time if it was setted, unit is ms
+// Example: 500
+delay: number
 }
 ```
 
@@ -347,6 +351,7 @@ on itself and thus must have callbacks attached to be useful.
   onStop: DraggableEventHandler,
   onMouseDown: (e: MouseEvent) => void,
   scale: number
+  delay: number
 }
 ```
 
